@@ -1,0 +1,15 @@
+﻿<Window x:Class="A011_StackPanel.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A011_StackPanel"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="300">
+  <StackPanel>
+    <Label Margin="10">Id:</Label>
+    <TextBox Margin="10" MinWidth="100" MaxWidth="200"/>
+    <Label Margin="10">Password:</Label>
+    <PasswordBox  Margin="10" MinWidth="100" MaxWidth="200"/>
+  </StackPanel>
+</Window>

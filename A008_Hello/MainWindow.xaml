@@ -1,0 +1,15 @@
+﻿<Window x:Class="A008_Hello.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A008_Hello"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="425">
+  <Grid Background="Orange">
+    <TextBlock Text="Hello World!" HorizontalAlignment="Center"
+               VerticalAlignment="Center" FontSize="50" Foreground="#FF0B31E8"/>
+    <TextBlock Foreground="#FFFF2800">Hello World!</TextBlock>
+
+  </Grid>
+</Window>
