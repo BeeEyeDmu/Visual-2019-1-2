@@ -19,8 +19,8 @@ namespace A028_FormClock
     private int hourHand; // 시침 길이
     private int minHand;  // 분침
     private int secHand;  // 초침
-    private const int clientSize = 300; // 화면크기
-    private const int clockSize = 200;  // 시계 크기
+    private const int clientSize = 400; // 화면크기
+    private const int clockSize = 300;  // 시계 크기
 
     public Form1()
     {
@@ -99,23 +99,33 @@ namespace A028_FormClock
       g.DrawLine(pen, x1 + cx, y1 + cy, x2 + cx, y2 + cy);
     }
 
+    private int dotSize = 24;
+
     // 시계판
     private void DrawClockFace()
     {
-      Pen pen = new Pen(Brushes.LightSteelBlue, 30);
+      Pen pen = new Pen(Brushes.LightSteelBlue, 50);
       g.DrawEllipse(pen,
         center.X - clockSize / 2,
         center.Y - clockSize / 2,
         clockSize, clockSize);
 
-      for(int i=0; i<12; i++)
+      // 숫자표시
+      Font font = new Font("맑은 고딕", 11, FontStyle.Bold);
+      StringFormat stringFormat = new StringFormat();
+      stringFormat.Alignment = StringAlignment.Center;
+      stringFormat.LineAlignment = StringAlignment.Center;
+      
+      for (int i=0; i<12; i++)
       {
         int deg = i * 30;
         double rad = deg * Math.PI / 180;
         int x = (int)(center.X + clockSize/2 * Math.Sin(rad));
         int y = (int)(center.Y - clockSize/2 * Math.Cos(rad));
-        Rectangle r = new Rectangle(x - 3, y - 3, 6, 6);
-        g.FillEllipse(Brushes.Blue, r);
+        Rectangle r = new Rectangle(x - dotSize/2, y - dotSize/2, dotSize, dotSize);
+        int v = (i == 0) ? 12 : i;        
+        g.FillEllipse(Brushes.AliceBlue, r);  // 숫자판 위에 dot 표시
+        g.DrawString(v.ToString(), font, Brushes.RoyalBlue, r, stringFormat);
       }
     }
   }
