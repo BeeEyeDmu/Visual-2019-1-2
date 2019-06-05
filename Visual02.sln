@@ -51,6 +51,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A029_WPF_Sample", "A029_WPF
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A030_WPFClock", "A030_WPFClock\A030_WPFClock.csproj", "{953E558A-1DB0-4D3B-940B-132B67078D1B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A031_ExclusiveRandom", "A031_ExclusiveRandom\A031_ExclusiveRandom.csproj", "{4F7EB4C1-2831-4E95-AD12-4BEDBD910395}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A032_MatchingGame", "A032_MatchingGame\A032_MatchingGame.csproj", "{797880D3-5C5D-49A5-AE2F-37D0D2EB428F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -153,6 +157,14 @@ Global
 		{953E558A-1DB0-4D3B-940B-132B67078D1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{953E558A-1DB0-4D3B-940B-132B67078D1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{953E558A-1DB0-4D3B-940B-132B67078D1B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4F7EB4C1-2831-4E95-AD12-4BEDBD910395}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F7EB4C1-2831-4E95-AD12-4BEDBD910395}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F7EB4C1-2831-4E95-AD12-4BEDBD910395}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F7EB4C1-2831-4E95-AD12-4BEDBD910395}.Release|Any CPU.Build.0 = Release|Any CPU
+		{797880D3-5C5D-49A5-AE2F-37D0D2EB428F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{797880D3-5C5D-49A5-AE2F-37D0D2EB428F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{797880D3-5C5D-49A5-AE2F-37D0D2EB428F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{797880D3-5C5D-49A5-AE2F-37D0D2EB428F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
